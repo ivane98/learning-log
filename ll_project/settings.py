@@ -29,6 +29,7 @@ ALLOWED_HOSTS = []
 
 LOGIN_REDIRECT_URL = 'learning_logs:index'
 LOGOUT_REDIRECT_URL = 'learning_logs:index'
+LOGIN_URL = 'accounts:login'
 
 
 # Application definition
@@ -37,6 +38,8 @@ INSTALLED_APPS = [
     #My Apps
     "learning_logs",
     "accounts",
+    #Third party apps
+    'django_bootstrap5',
     #Default Apps
     'django.contrib.admin',
     'django.contrib.auth',
